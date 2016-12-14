@@ -1,0 +1,29 @@
+program factorial;
+	var
+		value: Integer;
+		count: Integer;
+		result: Integer;
+	begin
+		read value;
+		count := 1;
+		result := 15;
+		while count <= value do
+			begin
+				count := count+1;
+				result := result+count;
+			end
+		if count != value then
+			begin
+				count := count+5;
+				result := result+20;
+				count := result+20;
+			end		
+		else
+			begin
+				count := count-5;
+				value := result+20;
+			end		
+		write result;
+		write count;
+		write 2;
+	end.
